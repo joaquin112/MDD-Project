@@ -115,22 +115,22 @@ class Main extends CI_Controller
         $this->load->view('main', $data);
     }
     
-    public function login()
+    public function login($error = "")
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->login();
         
-        $data = array("title" => $title, "content" => $content);
+        $data = array("title" => $title, "content" => $content, "error" => $error);
 	    
 	    $this->load->view('main', $data);
     }
     
-    public function signup()
+    public function signup($error = "")
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->signup();
         
-        $data = array("title" => $title, "content" => $content);
+        $data = array("title" => $title, "content" => $content, "error" => "");
 	    
 	    $this->load->view('main', $data);
     }
