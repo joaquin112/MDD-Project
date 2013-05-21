@@ -11,6 +11,7 @@ class Getcontent extends CI_Model {
     function getHomepageContent()
     {
         $content = 'This is the homepage';
+        $title = "Title";
     }
     
         
@@ -18,6 +19,7 @@ class Getcontent extends CI_Model {
     {
         
         $content = 'Login here';
+        $title = "Title";
         
     }
 
@@ -25,17 +27,20 @@ class Getcontent extends CI_Model {
     {
         
         $content = 'Sign up here';
+        $title = "Title";
         
     }
     
     function listingPage()
     {
         $content = 'Listing page';
+        $title = "Title";
     }
 
     function detailPage()
     {
         $content = 'Detail Page';
+        $title = "Title";
     }
 
 }

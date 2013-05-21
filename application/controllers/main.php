@@ -76,7 +76,9 @@ class Main extends CI_Controller
     public function index()
     {
         $this->load->model("getcontent");
-        $content = $this->getcontent->getHomepageContent();
+        list($title, $content) = $this->getcontent->getHomepageContent();
+        
+        $data = array("content" => $content);
         
         $this->load->view('main');
     }
@@ -84,7 +86,7 @@ class Main extends CI_Controller
     public function login()
     {
 	    $this->load->model("getcontent");
-        $content = $this->getcontent->getHomepageContent();
+        list($title, $content) = $this->getcontent->login();
 	    
 	    $this->load->view('main');
     }
@@ -92,7 +94,7 @@ class Main extends CI_Controller
     public function signup()
     {
 	    $this->load->model("getcontent");
-        $content = $this->getcontent->getHomepageContent();
+        list($title, $content) = $this->getcontent->signup();
 	    
 	    $this->load->view('main');
     }
@@ -100,7 +102,7 @@ class Main extends CI_Controller
     public function listingPage()
     {
 	    $this->load->model("getcontent");
-        $content = $this->getcontent->getHomepageContent();
+        list($title, $content) = $this->getcontent->listingPage();
 	    
 	    $this->load->view('main');
     }
@@ -108,7 +110,7 @@ class Main extends CI_Controller
     public function detailPage()
     {
 	    $this->load->model("getcontent");
-        $content = $this->getcontent->getHomepageContent();
+        list($title, $content) = $this->getcontent->detailPage();
 	    
 	    $this->load->view('main');
     }
