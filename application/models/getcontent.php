@@ -20,8 +20,8 @@ class Getcontent extends CI_Model {
     function login()
     {
         
-        $content = 'Login here';
-        $title = "Title";
+       $content = $this->load->view('forms/login', '', TRUE);
+        $title = "Login to our website";
         
         return array($title, $content);
     }
