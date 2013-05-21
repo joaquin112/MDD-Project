@@ -10,8 +10,10 @@ class Getcontent extends CI_Model {
     
     function getHomepageContent()
     {
-        $content = 'This is the homepage';
+        $content = "This is the homepage. You can <a href = 'login'>login</a>, <a href = 'signup'>signup</a>, <a href = 'listingpage'>view listing pages</a> or view <a href = 'detailpage'>Detail page</a>.";
         $title = "Title";
+        
+        return array($title, $content);
     }
     
         
@@ -21,6 +23,7 @@ class Getcontent extends CI_Model {
         $content = 'Login here';
         $title = "Title";
         
+        return array($title, $content);
     }
 
     function signup()
@@ -29,18 +32,23 @@ class Getcontent extends CI_Model {
         $content = 'Sign up here';
         $title = "Title";
         
+        return array($title, $content);
     }
     
     function listingPage()
     {
         $content = 'Listing page';
         $title = "Title";
+        
+        return array($title, $content);
     }
 
     function detailPage()
     {
         $content = 'Detail Page';
         $title = "Title";
+        
+        return array($title, $content);
     }
 
 }

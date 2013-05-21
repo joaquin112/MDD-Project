@@ -53,7 +53,7 @@ class Main extends CI_Controller
             case 'listingpage':
                 $this->listingPage();
                 break;
-            case 'detailPage':
+            case 'detailpage':
                 $this->detailPage();
                 break;
                 
@@ -78,7 +78,7 @@ class Main extends CI_Controller
         $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->getHomepageContent();
         
-        $data = array("content" => $content, "title" => $title);
+        $data = array("title" => $title, "content" => $content);
         
         $this->load->view('main', $data);
     }
@@ -88,7 +88,7 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->login();
         
-        $data = array("content" => $content, "title" => $title);
+        $data = array("title" => $title, "content" => $content);
 	    
 	    $this->load->view('main', $data);
     }
@@ -98,7 +98,7 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->signup();
         
-        $data = array("content" => $content, "title" => $title);
+        $data = array("title" => $title, "content" => $content);
 	    
 	    $this->load->view('main', $data);
     }
@@ -108,7 +108,7 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->listingPage();
         
-        $data = array("content" => $content, "title" => $title);
+        $data = array("title" => $title, "content" => $content);
 	    
 	    $this->load->view('main', $data);
     }
@@ -118,7 +118,7 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->detailPage();
         
-        $data = array("content" => $content, "title" => $title);
+        $data = array("title" => $title, "content" => $content);
 	    
 	    $this->load->view('main', $data);
     }

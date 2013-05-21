@@ -46,7 +46,6 @@
 	<div class="container">
 		<div class="sixteen columns">
 			<h1 class="remove-bottom" style="margin-top: 40px"><?php echo $title; ?></h1>
-			<h5><?php echo $title; ?></h5>
 			<hr />
 			<p><?php echo $content; ?></p>
 			
