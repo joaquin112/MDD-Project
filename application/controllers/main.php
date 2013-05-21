@@ -78,41 +78,49 @@ class Main extends CI_Controller
         $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->getHomepageContent();
         
-        $data = array("content" => $content);
+        $data = array("content" => $content, "title" => $title);
         
-        $this->load->view('main');
+        $this->load->view('main', $data);
     }
     
     public function login()
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->login();
+        
+        $data = array("content" => $content, "title" => $title);
 	    
-	    $this->load->view('main');
+	    $this->load->view('main', $data);
     }
     
     public function signup()
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->signup();
+        
+        $data = array("content" => $content, "title" => $title);
 	    
-	    $this->load->view('main');
+	    $this->load->view('main', $data);
     }
     
     public function listingPage()
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->listingPage();
+        
+        $data = array("content" => $content, "title" => $title);
 	    
-	    $this->load->view('main');
+	    $this->load->view('main', $data);
     }
     
     public function detailPage()
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->detailPage();
+        
+        $data = array("content" => $content, "title" => $title);
 	    
-	    $this->load->view('main');
+	    $this->load->view('main', $data);
     }
     
 }
