@@ -27,6 +27,7 @@ class Main extends CI_Controller
         parent::__construct();
         
         $this->load->library('session'); 
+        $this->load->library('tank_auth');
         
     }
     
@@ -43,9 +44,17 @@ class Main extends CI_Controller
             case '':
                 $this->index();
                 break;
-            
             case 'login':
                 $this->login();
+                break;
+            case 'signup':
+                $this->signup();
+                break;
+            case 'listingpage':
+                $this->listingPage();
+                break;
+            case 'detailPage':
+                $this->detailPage();
                 break;
                 
          }
@@ -57,34 +66,51 @@ class Main extends CI_Controller
     function _fullTemplateData()
     {
         //This function returns all the data needed for the template to work.
-        
         $this->load->library('templatedata');
         
         $data = $this->templatedata->fullTemplate($this->tank_auth->get_username());
         
         return $data;
-        
     }
     
     public function index()
     {
-        
         $this->load->model("getcontent");
-
         $content = $this->getcontent->getHomepageContent();
         
         $this->load->view('main');
-        
     }
     
-    public function signup()
+    public function login()
     {
-	    
 	    $this->load->model("getcontent");
         $content = $this->getcontent->getHomepageContent();
 	    
 	    $this->load->view('main');
+    }
+    
+    public function signup()
+    {
+	    $this->load->model("getcontent");
+        $content = $this->getcontent->getHomepageContent();
 	    
+	    $this->load->view('main');
+    }
+    
+    public function listingPage()
+    {
+	    $this->load->model("getcontent");
+        $content = $this->getcontent->getHomepageContent();
+	    
+	    $this->load->view('main');
+    }
+    
+    public function detailPage()
+    {
+	    $this->load->model("getcontent");
+        $content = $this->getcontent->getHomepageContent();
+	    
+	    $this->load->view('main');
     }
     
 }
