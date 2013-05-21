@@ -9,8 +9,6 @@ class Register extends Main {
 
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
-		$this->load->library('m_form_validation');
-		
 		$this->load->library('tank_auth');
 	
 		$username = $this->input->post('username');

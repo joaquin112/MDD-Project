@@ -80,7 +80,7 @@ class Main extends CI_Controller
     
     { 
 	   
-	   $scriptUrl = $this->uri->segment(2);
+	   $scriptUrl = $this->uri->segment(3);
 	   
 	   $file = "forms/$scriptUrl.php";		    
 	 	    
