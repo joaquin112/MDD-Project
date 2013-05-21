@@ -29,8 +29,9 @@ class Getcontent extends CI_Model {
     function signup()
     {
         
-        $content = 'Sign up here';
-        $title = "Title";
+        $content = $this->load->view('forms/signup', '', TRUE);
+        
+        $title = "Sign up to our website";
         
         return array($title, $content);
     }
