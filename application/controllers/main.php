@@ -118,9 +118,9 @@ class Main extends CI_Controller
     public function login($error = "")
     {
 	    $this->load->model("getcontent");
-        list($title, $content) = $this->getcontent->login();
+        list($title, $content) = $this->getcontent->login($error);
         
-        $data = array("title" => $title, "content" => $content, "error" => $error);
+        $data = array("title" => $title, "content" => $content);
 	    
 	    $this->load->view('main', $data);
     }
@@ -128,9 +128,9 @@ class Main extends CI_Controller
     public function signup($error = "")
     {
 	    $this->load->model("getcontent");
-        list($title, $content) = $this->getcontent->signup();
+        list($title, $content) = $this->getcontent->signup($error);
         
-        $data = array("title" => $title, "content" => $content, "error" => "");
+        $data = array("title" => $title, "content" => $content);
 	    
 	    $this->load->view('main', $data);
     }

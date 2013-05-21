@@ -17,19 +17,23 @@ class Getcontent extends CI_Model {
     }
     
         
-    function login()
+    function login($error)
     {
+    
+    	$data = array("error" => $error);
         
-       $content = $this->load->view('forms/login', '', TRUE);
+        $content = $this->load->view('forms/login', $data, TRUE);
         $title = "Login to our website";
         
         return array($title, $content);
     }
 
-    function signup()
+    function signup($error)
     {
         
-        $content = $this->load->view('forms/signup', '', TRUE);
+        $data = array("error" => $error);
+        
+        $content = $this->load->view('forms/signup', $data, TRUE);
         
         $title = "Sign up to our website";
         
