@@ -69,6 +69,10 @@ class Main extends CI_Controller
     public function index()
     {
         
+        $this->load->model("getcontent");
+
+        $content = $this->getcontent->getHomepageContent();
+        
         $this->load->view('main');
         
     }
@@ -76,7 +80,10 @@ class Main extends CI_Controller
     public function signup()
     {
 	    
+	    $this->load->model("getcontent");
+        $content = $this->getcontent->getHomepageContent();
 	    
+	    $this->load->view('main');
 	    
     }
     
