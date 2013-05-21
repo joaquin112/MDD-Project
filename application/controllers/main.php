@@ -56,6 +56,9 @@ class Main extends CI_Controller
             case 'detailpage':
                 $this->detailPage();
                 break;
+            case 'forms':
+            	$this->forms();
+            	break;
                 
          }
         
@@ -71,6 +74,29 @@ class Main extends CI_Controller
         $data = $this->templatedata->fullTemplate($this->tank_auth->get_username());
         
         return $data;
+    }
+    
+    public function forms()
+    
+    { 
+	   
+	   $scriptUrl = $this->uri->segment(2);
+	   
+	   $file = "forms/$scriptUrl.php";		    
+	 	    
+	   $userName = $this->tank_auth->get_username();
+	   $userId = $this->tank_auth->get_user_id();	    
+	 	    
+	   include $file;
+	   
+	   if ($scriptUrl == "register") {
+	   
+		   $register = new Register();
+		   
+		   $register->main();
+	   
+	   } 
+	    
     }
     
     public function index()
