@@ -11,7 +11,7 @@ class Getcontent extends CI_Model {
     function getHomepageContent()
     {
         $content = "This is the homepage. You can <a href = 'login'>login</a>, <a href = 'signup'>signup</a>, <a href = 'listingpage'>view listing pages</a> or view <a href = 'detailpage'>Detail page</a>.";
-        $title = "Title";
+        $title = "Positive Thoughts";
         
         return array($title, $content);
     }
