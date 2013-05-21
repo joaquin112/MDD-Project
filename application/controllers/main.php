@@ -95,6 +95,12 @@ class Main extends CI_Controller
 		   
 		   $register->main();
 	   
+	   } else if ($scriptUrl == "login") {
+	   
+		   $register = new Login();
+		   
+		   $register->main();
+	   
 	   } 
 	    
     }
