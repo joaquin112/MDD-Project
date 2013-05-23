@@ -10,7 +10,12 @@ class Getcontent extends CI_Model {
     
     function getHomepageContent()
     {
-        $content = "This is the homepage. You can <a href = 'login'>login</a>, <a href = 'signup'>signup</a>, <a href = 'listingpage'>view listing pages</a> or view <a href = 'detailpage'>Detail page</a>.";
+    
+    	$this->load->model("pages/homepage");
+    	$data = $this->homepage->getContent();
+    	
+    	$content = $this->load->view("pages/homepage", array("content" => $data, "username" => $this->tank_auth->get_username()), TRUE);
+    	
         $title = "Positive Thoughts";
         
         return array($title, $content);
@@ -23,7 +28,20 @@ class Getcontent extends CI_Model {
     	$data = array("error" => $error);
         
         $content = $this->load->view('forms/login', $data, TRUE);
+ 
         $title = "Login to our website";
+        
+        return array($title, $content);
+    }
+    
+    function submit()
+    {
+    
+    	$data = array('username' => $this->tank_auth->get_username());
+        
+        $content = $this->load->view('pages/submit', $data, TRUE);
+ 
+        $title = "Submit a thought";
         
         return array($title, $content);
     }

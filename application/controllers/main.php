@@ -59,6 +59,9 @@ class Main extends CI_Controller
             case 'forms':
             	$this->forms();
             	break;
+            case 'submit':
+            	$this->submit();
+            	break;
                 
          }
         
@@ -110,9 +113,7 @@ class Main extends CI_Controller
         $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->getHomepageContent();
         
-        $data = array("title" => $title, "content" => $content);
-        
-        $this->load->view('main', $data);
+        $this->loadView($title, $content);
     }
     
     public function login($error = "")
@@ -120,9 +121,7 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->login($error);
         
-        $data = array("title" => $title, "content" => $content);
-	    
-	    $this->load->view('main', $data);
+        $this->loadView($title, $content);
     }
     
     public function signup($error = "")
@@ -130,9 +129,7 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->signup($error);
         
-        $data = array("title" => $title, "content" => $content);
-	    
-	    $this->load->view('main', $data);
+        $this->loadView($title, $content);
     }
     
     public function listingPage()
@@ -140,9 +137,15 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->listingPage();
         
-        $data = array("title" => $title, "content" => $content);
-	    
-	    $this->load->view('main', $data);
+        $this->loadView($title, $content);
+    }
+    
+    public function submit()
+    {
+	    $this->load->model("getcontent");
+        list($title, $content) = $this->getcontent->submit();
+        
+        $this->loadView($title, $content);
     }
     
     public function detailPage()
@@ -150,9 +153,21 @@ class Main extends CI_Controller
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->detailPage();
         
-        $data = array("title" => $title, "content" => $content);
+        $this->loadView($title, $content);
+    }
+    
+    private function loadView($title, $content) {
+	     
+	     //This is where I will set all the design variables to aid full encapsulation for my view.
+	    
+	     $username = $this->tank_auth->get_username();
+	     
+	     if ($username == "") {$usernameText = "Not logged in";} else {$userNameText = $username;}
+	    
+	     $data = array("title" => $title, "content" => $content, "username" => $userNameText);
 	    
 	    $this->load->view('main', $data);
+	    
     }
     
 }
