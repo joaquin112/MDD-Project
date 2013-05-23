@@ -43,6 +43,8 @@
 
 	<!-- Delete everything in this .container and get started on your own site! -->
 
+	<div id="nav"><p class="title"><a href="./">PositiveThoughts</a></p><ul id="navigation">  <li><a href="./">Home</a></li>   <li><a href="top">Top</a></li>     <li><a href="submit">Submit</a></li></ul></div>
+
 	<div class="container">
 		<div class="sixteen columns">
 			<h1 class="remove-bottom" style="margin-top: 40px"><?php echo $title; ?></h1><?=$username?>
