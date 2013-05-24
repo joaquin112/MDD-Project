@@ -43,7 +43,7 @@
 
 	<!-- Delete everything in this .container and get started on your own site! -->
 
-	<div id="nav"><p class="title"><a href="./">PositiveThoughts</a></p><ul id="navigation">  <li><a href="./">Home</a></li>   <li><a href="top">Top</a></li>     <li><a href="submit">Submit</a></li></ul></div>
+	<div id="nav"><p class="title"><a href="./">PositiveThoughts</a></p><ul id="navigation">  <li><a href="./">Home</a></li>   <li><a href="top">Top</a></li>     <li><a href="submit">Submit</a></li><?php if (!$this->tank_auth->is_logged_in()) { ?><li><a href = 'login'>login</a><li><a href = 'signup'>signup</a></li><?php } ?></ul></div>
 
 	<div class="container">
 		<div class="sixteen columns">
