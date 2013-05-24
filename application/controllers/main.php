@@ -104,6 +104,12 @@ class Main extends CI_Controller
 		   
 		   $register->main();
 	   
+	   } else if ($scriptUrl == "submit") {
+	   
+		   $submit = new Submit();
+		   
+		   $submit->main();
+	   
 	   } 
 	    
     }
