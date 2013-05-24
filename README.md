@@ -7,8 +7,10 @@ Positive Thoughts is a social website with the aim to share as many positive ima
 
 Important files:
 
-[a link](https://github.com/joaquin112/MDD-Project/blob/master/application/controllers/main.php) - The Main Controller
+[Main Controller](https://github.com/joaquin112/MDD-Project/blob/master/application/controllers/main.php)
 
-[a link](https://github.com/joaquin112/MDD-Project/blob/master/application/models/pages/homepage.php) - The main homepage model
+[Homepage model](https://github.com/joaquin112/MDD-Project/blob/master/application/models/pages/homepage.php)
 
-[a link](https://github.com/joaquin112/MDD-Project/tree/master/application/views) - The views folder, also includes a pages subfolder to make everything more organized
+[Views folder](https://github.com/joaquin112/MDD-Project/tree/master/application/views)
+
+[Forms folder](https://github.com/joaquin112/MDD-Project/tree/master/application/controllers/forms)
