@@ -84,3 +84,5 @@ ERROR - 2013-05-28 01:22:16 --> Severity: Notice  --> Undefined variable: userNa
 ERROR - 2013-05-28 01:22:51 --> Severity: Notice  --> Undefined variable: userNameText /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 173
 ERROR - 2013-05-28 01:25:14 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 01:25:16 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:34:39 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:35:27 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
