@@ -46,7 +46,7 @@
 	<div class="container">
 
 	
-	<h1 class="remove-bottom"><?php echo $title; ?></h1><ul id="navigation">  <li><a href="./">Home</a></li>   <li><a href="top">Top</a></li>     <li><a href="submit">Submit</a></li><?php if (!$this->tank_auth->is_logged_in()) { ?><li><a href = 'login'>login</a><li><a href = 'signup'>signup</a></li><?php } ?></ul>
+	<h1 class="remove-bottom"><?php echo $title; ?></h1><ul id="navigation">  <li><a href="./">Home</a></li>   <li><a href="top">Top</a></li>     <li><a href="submit">Submit</a></li><li><a href = 'contact'>Contact Us</a></li><?php if (!$this->tank_auth->is_logged_in()) { ?><li><a href = 'login'>login</a><li><a href = 'signup'>signup</a></li><?php } else {?> <li><a href = 'profile'>My Profile</a> <?} ?></ul>
 	
 		
 	<hr />
