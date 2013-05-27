@@ -47,23 +47,33 @@ body {
     font-size: 15px;
 }
 
-#navigation {
-    list-style-type: none;
+h1.remove-bottom {
+	
+	display:inline;
+	
 }
 
-li {
-    display: inline;
-    padding: 10px;
+ul#navigation {
+	
+	display:inline;
+	margin-left:100px;
+	
 }
 
-#nav a {
-    font-family: verdana;
-    text-decoration: none;
-    color: #EDEDED;
+
+ul#navigation li{
+	
+	display:inline;
+	margin-left:5px;
+
+	
 }
 
-#nav a:hover {
-    color: #BDBDBD;
+#topnavigation {
+	
+	float:right;
+	display:inline;
+	
 }
 
 #body {
@@ -85,6 +95,12 @@ hr {
 
 /* #Page Styles
 ================================================== */
+
+body {
+	
+	background-color:#f5ffff;
+	
+}
 
 /* #Media Queries
 ================================================== */
