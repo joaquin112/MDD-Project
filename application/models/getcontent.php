@@ -36,13 +36,22 @@ class Getcontent extends CI_Model {
     {
     
     	$data = array("error" => $error);
-        
         $content = $this->load->view('forms/login', $data, TRUE);
- 
         $title = "Login to our website";
         
         return array($title, $content);
     }
+
+	function getUsers()
+    {
+    	
+    	$this->load->model("pages/allusers");
+    	$content = $this->allusers->getContent();
+        $title = "View all users";
+        
+        return array($title, $content);
+    }
+
     
     function submit()
     {

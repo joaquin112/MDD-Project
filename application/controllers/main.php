@@ -50,6 +50,9 @@ class Main extends CI_Controller
             case 'signup':
                 $this->signup();
                 break;
+            case 'users':
+                $this->users();
+                break;
             case 'listingpage':
                 $this->listingPage();
                 break;
@@ -66,7 +69,6 @@ class Main extends CI_Controller
          }
         
     }
-    
     
     
     function _fullTemplateData()
@@ -118,15 +120,20 @@ class Main extends CI_Controller
     {
         $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->getHomepageContent();
-        
         $this->loadView($title, $content, true);
+    }
+    
+    public function users()
+    {
+        $this->load->model("getcontent");
+        list($title, $content) = $this->getcontent->getUsers();
+        $this->loadView($title, $content);
     }
     
     public function login($error = "")
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->login($error);
-        
         $this->loadView($title, $content);
     }
     
@@ -134,7 +141,6 @@ class Main extends CI_Controller
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->signup($error);
-        
         $this->loadView($title, $content);
     }
     
@@ -142,7 +148,6 @@ class Main extends CI_Controller
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->listingPage();
-        
         $this->loadView($title, $content);
     }
     
@@ -150,7 +155,6 @@ class Main extends CI_Controller
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->submit();
-        
         $this->loadView($title, $content);
     }
     
@@ -158,7 +162,6 @@ class Main extends CI_Controller
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->detailPage();
-        
         $this->loadView($title, $content);
     }
     

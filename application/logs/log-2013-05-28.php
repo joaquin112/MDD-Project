@@ -86,3 +86,17 @@ ERROR - 2013-05-28 01:25:14 --> Severity: Notice  --> Undefined variable: conten
 ERROR - 2013-05-28 01:25:16 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 01:34:39 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 01:35:27 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:47:39 --> Severity: Notice  --> Undefined property: Main::$getcontent /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 129
+ERROR - 2013-05-28 01:48:34 --> Severity: Notice  --> Undefined property: Main::$Users /Applications/MAMP/htdocs/MDD Project/system/core/Model.php 51
+ERROR - 2013-05-28 01:49:41 --> Severity: Notice  --> Undefined variable: content /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 52
+ERROR - 2013-05-28 01:49:41 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:50:01 --> Severity: Notice  --> Undefined property: Main::$Users /Applications/MAMP/htdocs/MDD Project/system/core/Model.php 51
+ERROR - 2013-05-28 01:50:53 --> Severity: Notice  --> Undefined property: Main::$Users /Applications/MAMP/htdocs/MDD Project/system/core/Model.php 51
+ERROR - 2013-05-28 01:50:58 --> Severity: Notice  --> Undefined variable: content /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 52
+ERROR - 2013-05-28 01:50:58 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:51:05 --> Severity: Notice  --> Undefined property: Main::$Users /Applications/MAMP/htdocs/MDD Project/system/core/Model.php 51
+ERROR - 2013-05-28 01:51:06 --> Severity: Notice  --> Undefined property: Main::$Users /Applications/MAMP/htdocs/MDD Project/system/core/Model.php 51
+ERROR - 2013-05-28 01:51:06 --> Severity: Notice  --> Undefined property: Main::$Users /Applications/MAMP/htdocs/MDD Project/system/core/Model.php 51
+ERROR - 2013-05-28 01:53:56 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:54:30 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:54:43 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
