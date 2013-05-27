@@ -19,11 +19,13 @@ class Homepage extends CI_Model {
 		
 			{
 			    
-			    $content .= "<h2>" . $row->title . "</h2>" . "<img src = '" . $row->imagepath . "'/><p><a href = 'report/" . $row->id . "'>Report</a>";
+			    //$content .= "<h2>" . $row->title . "</h2>" . "<img src = '" . $row->imagepath . "'/><p><a href = 'report/" . $row->id . "'>Report</a>";
+			    
+			    $array[$row->title] = $row->imagepath;
 			    
 			}
 	    
-	    return $content;
+	    return $array;
 	    
     }
 

@@ -61,3 +61,19 @@ ERROR - 2013-05-28 00:42:30 --> Severity: Notice  --> Undefined variable: conten
 ERROR - 2013-05-28 00:44:38 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 00:45:05 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 00:45:07 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:47:01 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:47:01 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 74
+ERROR - 2013-05-28 00:47:41 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:47:44 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:47:47 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:47:48 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:47:50 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:49:52 --> Severity: Notice  --> Undefined variable: isHomepage /Applications/MAMP/htdocs/MDD Project/application/views/main.php 54
+ERROR - 2013-05-28 00:49:52 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 00:51:23 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:10:00 --> Severity: Notice  --> Array to string conversion /Applications/MAMP/htdocs/MDD Project/application/views/pages/homepage.php 2
+ERROR - 2013-05-28 01:10:00 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/pages/homepage.php 8
+ERROR - 2013-05-28 01:10:00 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 21
+ERROR - 2013-05-28 01:10:19 --> Severity: Notice  --> Array to string conversion /Applications/MAMP/htdocs/MDD Project/application/views/pages/homepage.php 2
+ERROR - 2013-05-28 01:10:19 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/pages/homepage.php 8
+ERROR - 2013-05-28 01:10:19 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 21

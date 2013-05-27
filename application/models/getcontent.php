@@ -6,6 +6,7 @@ class Getcontent extends CI_Model {
     {
         // Call the Model constructor
         parent::__construct();
+
     }
     
     function getHomepageContent()
@@ -13,8 +14,15 @@ class Getcontent extends CI_Model {
     
     	$this->load->model("pages/homepage");
     	$data = $this->homepage->getContent();
+    	$content = '';
     	
-    	$content = $this->load->view("pages/homepage", array("content" => $data, "username" => $this->tank_auth->get_username()), TRUE);
+    	//$content = $this->load->view("pages/homepage", array("content" => $data, "username" => $this->tank_auth->get_username()), TRUE);
+    	
+    	foreach($data as $item=>$key) {
+	    	
+			$content .= $this->load->view("incontenttwo", array("title" => $item, "content" => $key), TRUE);
+	    	
+    	}
     	
         $title = "Positive Thoughts";
         

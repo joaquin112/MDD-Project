@@ -119,7 +119,7 @@ class Main extends CI_Controller
         $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->getHomepageContent();
         
-        $this->loadView($title, $content);
+        $this->loadView($title, $content, true);
     }
     
     public function login($error = "")
@@ -162,7 +162,7 @@ class Main extends CI_Controller
         $this->loadView($title, $content);
     }
     
-    private function loadView($title, $content) {
+    private function loadView($title, $content, $isHomepage = false) {
 	     
 	     //This is where I will set all the design variables to aid full encapsulation for my view.
 	    
@@ -170,7 +170,7 @@ class Main extends CI_Controller
 	     
 	     if ($username == "") {$usernameText = "Not logged in";} else {$userNameText = $username;}
 	    
-	     $data = array("title" => $title, "content" => $content, "username" => $userNameText);
+	     $data = array("title" => $title, "content" => $content, "username" => $userNameText, "isHomepage" => $isHomepage);
 	    
 	    $this->load->view('main', $data);
 	    

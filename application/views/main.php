@@ -51,7 +51,7 @@
 		
 	<hr />
 	
-	
+		<?php if (!$isHomepage) { ?>
 		
 		<div class="twelve columns">
 			<p><?php echo $content; ?></p>
@@ -63,7 +63,8 @@
 			<p><?php echo $contentTitle; ?></p>
 
 		</div>
-	
+
+		<?php } else { echo $content; }?>
 
 	</div><!-- container -->
 
