@@ -6,5 +6,6 @@
 	
 	<div class="seven columns">	
 		<h2><?php echo $title; ?></h2>
+		<?php echo $afterTitle; ?>
 	</div>
 </div>

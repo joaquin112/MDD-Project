@@ -12,6 +12,8 @@ class Getcontent extends CI_Model {
     function getHomepageContent()
     {
     
+    	$afterTitle = "<div class = 'share'>Facebook info goes here</div>";
+    
     	$this->load->model("pages/homepage");
     	$data = $this->homepage->getContent();
     	$content = '';
@@ -20,7 +22,7 @@ class Getcontent extends CI_Model {
     	
     	foreach($data as $item=>$key) {
 	    	
-			$content .= $this->load->view("incontenttwo", array("title" => $item, "content" => $key), TRUE);
+			$content .= $this->load->view("incontenttwo", array("title" => $item, "content" => $key, "afterTitle" => $afterTitle), TRUE);
 	    	
     	}
     	
