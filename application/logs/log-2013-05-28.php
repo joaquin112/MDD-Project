@@ -77,3 +77,8 @@ ERROR - 2013-05-28 01:10:00 --> Severity: Warning  --> Invalid argument supplied
 ERROR - 2013-05-28 01:10:19 --> Severity: Notice  --> Array to string conversion /Applications/MAMP/htdocs/MDD Project/application/views/pages/homepage.php 2
 ERROR - 2013-05-28 01:10:19 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/pages/homepage.php 8
 ERROR - 2013-05-28 01:10:19 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 21
+ERROR - 2013-05-28 01:14:29 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:14:31 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:20:55 --> Severity: Notice  --> Undefined variable: userNameText /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 173
+ERROR - 2013-05-28 01:22:16 --> Severity: Notice  --> Undefined variable: userNameText /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 173
+ERROR - 2013-05-28 01:22:51 --> Severity: Notice  --> Undefined variable: userNameText /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 173

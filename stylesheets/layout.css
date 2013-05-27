@@ -87,9 +87,18 @@ hr {
     border: 1px solid #262626;
 }
 
+.thought {
+	
+	border-bottom: 1px solid #DDDDDD;
+	overflow:hidden;
+	margin-bottom:20px;
+	
+}
+
 .container {
 	
 	margin-top:50px;
+	background-color:white;
 	
 }
 
