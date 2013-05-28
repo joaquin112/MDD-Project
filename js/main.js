@@ -11,7 +11,7 @@
      ri.rateit('readonly', true);
 
      $.ajax({
-         url: 'ajax/addStarRating', //your server side script
+         url: 'ajax/addstarrating', //your server side script
          data: {id: productID, value: value}, //our data
          type: 'POST',
          success: function (data) {

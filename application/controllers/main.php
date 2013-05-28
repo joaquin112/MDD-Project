@@ -65,6 +65,9 @@ class Main extends CI_Controller
             case 'submit':
             	$this->submit();
             	break;
+            case 'ajax':
+            	$this->ajax();
+            	break;
                 
          }
         
@@ -114,6 +117,13 @@ class Main extends CI_Controller
 	   
 	   } 
 	    
+    }
+    
+    public function ajax()
+    {
+	   $scriptUrl = $this->uri->segment(3);
+	   $file = "ajax/$scriptUrl.php";
+	   include $file;
     }
     
     public function index()
