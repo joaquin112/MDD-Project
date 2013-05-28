@@ -71,5 +71,12 @@
 
 <!-- End Document
 ================================================== -->
+
+<script type = "text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type = "text/javascript" src="<?php echo $this->config->item('base_url'); ?>js/main.js"></script>
+
+<script type = "text/javascript" src="<?php echo $this->config->item('base_url'); ?>js/jquery.rateit.min.js"></script>
+
 </body>
 </html>

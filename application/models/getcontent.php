@@ -12,8 +12,6 @@ class Getcontent extends CI_Model {
     function getHomepageContent()
     {
     
-    	$afterTitle = "<div class = 'share'>Facebook info goes here</div>";
-    
     	$this->load->model("pages/homepage");
     	$data = $this->homepage->getContent();
     	$content = '';
@@ -26,6 +24,9 @@ class Getcontent extends CI_Model {
 	    		$tContent = $array['imagepath'];
 	    		$userId = $array['userid'];
 	    		$author = $array['username'];
+	    		$thoughtId = $array['thoughtid'];
+	    		
+	    		 $afterTitle = $this->load->view("extra/share", array("thoughtid" => $thoughtId), TRUE);
 	    		
 				$content .= $this->load->view("incontenttwo", array("title" => $title, "content" => $tContent, "afterTitle" => $afterTitle, "author" => $author, "userId" => $userId), TRUE);
 	    	

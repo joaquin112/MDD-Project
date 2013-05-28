@@ -169,11 +169,19 @@ class Main extends CI_Controller
 	     
 	     //This is where I will set all the design variables to aid full encapsulation for my view.
 	    
-	     $username = $this->tank_auth->get_username();
-	     
-	     if ($username == "") {$usernameText = "Not logged in";} else {$userNameText = $username;}
+		 if ($this->tank_auth->is_logged_in()) {
 	    
-	     $data = array("title" => $title, "content" => $content, "username" => $userNameText, "isHomepage" => $isHomepage);
+	     	$username = $this->tank_auth->get_username();
+	     
+	     } else {
+		     
+		     $username = '';
+		     
+	     }
+	     
+	     if ($username == "") {$usernameText = "Not logged in";} else {$usernameText = $username;}
+	    
+	     $data = array("title" => $title, "content" => $content, "username" => $usernameText, "isHomepage" => $isHomepage);
 	    
 	    $this->load->view('main', $data);
 	    

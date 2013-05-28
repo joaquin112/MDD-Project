@@ -13,7 +13,7 @@ class Homepage extends CI_Model {
 	    $content = '';
 	    $fullArray = array();
 	    
-	    $this->db->select("imagepath, url, author, title, users.username as username")->from("thoughts")->join('users', 'thoughts.author = users.id')->order_by("thoughts.id", "desc");
+	    $this->db->select("thoughts.id as userid, imagepath, url, author, title, users.username as username")->from("thoughts")->join('users', 'thoughts.author = users.id')->order_by("thoughts.id", "desc");
 	    $query = $this->db->get();
 		
 		foreach ($query->result() as $row)
@@ -26,6 +26,7 @@ class Homepage extends CI_Model {
 			    $array['imagepath'] = $row->imagepath;
 			    $array['username'] = $row->username;
 			    $array['userid'] = $row->author;
+			    $array['thoughtid'] = $row->userid;
 			    
 			    array_push($fullArray, $array);
 			    
