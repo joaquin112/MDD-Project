@@ -78,6 +78,12 @@ class Main extends CI_Controller
             case 'top':
             	$this->top();
             	break;
+            case 'documentation':
+            	$this->documentation();
+            	break;
+			case 'tos':
+            	$this->tos();
+            	break;
             case 'contact':
             	$this->contact();
             	break;
@@ -160,10 +166,17 @@ class Main extends CI_Controller
         $this->loadView($title, $content);
     }
     
-    public function thankyou()
+    public function documentation()
     {
     	
-        list($title, $content) = $this->getcontent->getThankyouContent();
+        list($title, $content) = $this->getcontent->documentation();
+        $this->loadView($title, $content);
+    }
+    
+    public function tos()
+    {
+    	
+        list($title, $content) = $this->getcontent->tos();
         $this->loadView($title, $content);
     }
     

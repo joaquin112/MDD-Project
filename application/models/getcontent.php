@@ -92,6 +92,28 @@ class Getcontent extends CI_Model {
 	    
     }
     
+    function documentation()
+    {
+	    
+	    $content = $this->load->view('pages/documentation', '', TRUE);
+	    
+	    $title = "Positive Thoughts Documentation";
+	    
+	    return array($title, $content); 
+	    
+    }
+    
+    function tos()
+    {
+	    
+	     $content = $this->load->view('pages/tos', '', TRUE);
+	    
+	    $title = "Positive Thoughts Terms of Service";
+	    
+	    return array($title, $content); 
+	    
+    }
+    
 	function getUsers($user)
     {
     	

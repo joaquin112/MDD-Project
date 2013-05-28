@@ -69,7 +69,7 @@
 	
 	<div id = 'footer'>
 	
-		PositiveThoughts - All Rights Reserved | <a href = 'documentation'>Documentation</a> | <a href = 'tos'>TOS</a>
+		PositiveThoughts - All Rights Reserved | <a href = '<?php echo $this->config->item('base_url'); ?>documentation'>Documentation</a> | <a href = '<?php echo $this->config->item('base_url'); ?>tos'>TOS</a>
 	
 	</div>
 
