@@ -8,12 +8,12 @@ class Homepage extends CI_Model {
         parent::__construct();
     }
     
-    public function getContent()
+    public function getContent($orderBy)
     {
 	    $content = '';
 	    $fullArray = array();
 	    
-	    $this->db->select("thoughts.id as userid, imagepath, url, author, title, users.username as username, rating, votes")->from("thoughts")->join('users', 'thoughts.author = users.id')->order_by("thoughts.id", "desc");
+	    $this->db->select("thoughts.id as userid, imagepath, url, author, title, users.username as username, rating, votes")->from("thoughts")->join('users', 'thoughts.author = users.id')->order_by($orderBy, "desc");
 	    $query = $this->db->get();
 		
 		foreach ($query->result() as $row)

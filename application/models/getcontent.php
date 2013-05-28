@@ -9,11 +9,11 @@ class Getcontent extends CI_Model {
 
     }
     
-    function getHomepageContent()
+    function getHomepageContent($orderBy = "thoughts.id")
     {
     
     	$this->load->model("pages/homepage");
-    	$data = $this->homepage->getContent();
+    	$data = $this->homepage->getContent($orderBy);
     	$content = '';
     	
     	//$content = $this->load->view("pages/homepage", array("content" => $data, "username" => $this->tank_auth->get_username()), TRUE);
@@ -39,6 +39,16 @@ class Getcontent extends CI_Model {
         $title = "Positive Thoughts";
         
         return array($title, $content);
+    }
+    
+    
+    function getTopContent()
+    {
+	    
+	    $content = $this->getHomepageContent("rating");
+	    
+	    return $content;
+	    
     }
     
         
