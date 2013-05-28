@@ -20,9 +20,16 @@ class Getcontent extends CI_Model {
     	
     	//$content = $this->load->view("pages/homepage", array("content" => $data, "username" => $this->tank_auth->get_username()), TRUE);
     	
-    	foreach($data as $item=>$key) {
+    	foreach($data as $array) {
 	    	
-			$content .= $this->load->view("incontenttwo", array("title" => $item, "content" => $key, "afterTitle" => $afterTitle), TRUE);
+	    		$title = $array['title'];
+	    		$tContent = $array['imagepath'];
+	    		$userId = $array['userid'];
+	    		$author = $array['username'];
+	    		
+				$content .= $this->load->view("incontenttwo", array("title" => $title, "content" => $tContent, "afterTitle" => $afterTitle, "author" => $author, "userId" => $userId), TRUE);
+	    	
+
 	    	
     	}
     	

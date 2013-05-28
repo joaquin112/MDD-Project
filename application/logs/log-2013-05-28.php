@@ -100,3 +100,52 @@ ERROR - 2013-05-28 01:51:06 --> Severity: Notice  --> Undefined property: Main::
 ERROR - 2013-05-28 01:53:56 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 01:54:30 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
 ERROR - 2013-05-28 01:54:43 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:54:56 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:55:18 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:55:20 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:55:22 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 01:55:25 --> Severity: Notice  --> Undefined variable: contentTitle /Applications/MAMP/htdocs/MDD Project/application/views/main.php 63
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:05:44 --> Severity: Notice  --> Undefined variable: key /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:16:40 --> Query error: Table 'MDD.username' doesn't exist
+ERROR - 2013-05-28 02:16:54 --> Query error: Column 'id' in field list is ambiguous
+ERROR - 2013-05-28 02:18:18 --> Query error: Column 'id' in order clause is ambiguous
+ERROR - 2013-05-28 02:18:19 --> Query error: Column 'id' in order clause is ambiguous
+ERROR - 2013-05-28 02:18:34 --> Severity: Notice  --> Undefined property: stdClass::$username /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:18:34 --> Severity: Notice  --> Undefined property: stdClass::$username /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:18:34 --> Severity: Notice  --> Undefined property: stdClass::$username /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:18:34 --> Severity: Notice  --> Undefined property: stdClass::$username /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Undefined property: stdClass::$users /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Use of undefined constant username - assumed 'username' /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Undefined property: stdClass::$users /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Use of undefined constant username - assumed 'username' /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Undefined property: stdClass::$users /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Use of undefined constant username - assumed 'username' /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Undefined property: stdClass::$users /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:22:26 --> Severity: Notice  --> Use of undefined constant username - assumed 'username' /Applications/MAMP/htdocs/MDD Project/application/models/pages/homepage.php 24
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 27
+ERROR - 2013-05-28 02:27:26 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 29
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 32
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 29
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 32
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 29
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 32
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined index: author /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 29
+ERROR - 2013-05-28 02:27:45 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 32
+ERROR - 2013-05-28 02:28:04 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:28:04 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:28:04 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30
+ERROR - 2013-05-28 02:28:04 --> Severity: Notice  --> Undefined variable: tContent /Applications/MAMP/htdocs/MDD Project/application/models/getcontent.php 30

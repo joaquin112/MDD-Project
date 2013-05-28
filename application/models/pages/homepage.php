@@ -11,8 +11,9 @@ class Homepage extends CI_Model {
     public function getContent()
     {
 	    $content = '';
+	    $fullArray = array();
 	    
-	    $this->db->select("id, imagepath, url, title")->from("thoughts")->order_by("id", "desc");
+	    $this->db->select("imagepath, url, author, title, users.username as username")->from("thoughts")->join('users', 'thoughts.author = users.id')->order_by("thoughts.id", "desc");
 	    $query = $this->db->get();
 		
 		foreach ($query->result() as $row)
@@ -21,11 +22,18 @@ class Homepage extends CI_Model {
 			    
 			    //$content .= "<h2>" . $row->title . "</h2>" . "<img src = '" . $row->imagepath . "'/><p><a href = 'report/" . $row->id . "'>Report</a>";
 			    
-			    $array[$row->title] = $row->imagepath;
+			    $array['title'] = $row->title;
+			    $array['imagepath'] = $row->imagepath;
+			    $array['username'] = $row->username;
+			    $array['userid'] = $row->author;
+			    
+			    array_push($fullArray, $array);
 			    
 			}
+			
+		
 	    
-	    return $array;
+	    return $fullArray;
 	    
     }
 

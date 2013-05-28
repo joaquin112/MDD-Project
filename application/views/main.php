@@ -57,12 +57,6 @@
 			<p><?php echo $content; ?></p>
 		</div>
 
-	
-		<div class="four columns">
-			
-			<p><?php echo $contentTitle; ?></p>
-
-		</div>
 
 		<?php } else { echo $content; }?>
 

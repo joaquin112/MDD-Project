@@ -28,13 +28,14 @@ class Submit extends Main {
 			
 			$slug = $this->toAscii($title);
 			$username = $this->tank_auth->get_username();
+			$id = $this->tank_auth->get_user_id();
 			
 			if ($username == "") {die("Must be logged in");}
 		
 			$data['title'] = $title;
 			$data['imagepath'] = $imageurl;
 			$data['url'] = $slug;
-			$data['author'] = $username;
+			$data['author'] = $id;
 			$data['date'] = time(); //UNIX timestamp
 			$data['numcomments'] = 0;
 			$data['category'] = "undefined";

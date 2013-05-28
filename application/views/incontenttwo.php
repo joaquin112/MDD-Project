@@ -6,6 +6,6 @@
 	
 	<div class="seven columns">	
 		<h2><?php echo $title; ?></h2>
-		<?php echo $afterTitle; ?>
+		<?php echo "<a href = 'users/$userId'>By $author</a>"; echo $afterTitle; ?>
 	</div>
 </div>
