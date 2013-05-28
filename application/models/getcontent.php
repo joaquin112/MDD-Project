@@ -73,9 +73,20 @@ class Getcontent extends CI_Model {
     function getThankyouContent()
     {
 	    
-	    $content = "Thank you for contacting us.";
+	    $content = "Thank you for submitting our form.";
 	    
 	    $title = "Thank you";
+	    
+	    return array($title, $content); 
+	    
+    }
+    
+    function subscribe()
+    {
+	    
+	     $content = $this->load->view('pages/subscribe', '', TRUE);
+	    
+	    $title = "Subscribe to our Newsletter";
 	    
 	    return array($title, $content); 
 	    
