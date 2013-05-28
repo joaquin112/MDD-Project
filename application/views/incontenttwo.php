@@ -10,6 +10,8 @@
 		
 		<?php if ($rating > 0) { ?><div class = 'rating'><?php echo $rating; ?> / 5</div> <? } ?>
 		
+		<p>This image is property of its respective author.</p>
+		
 		<?php echo $afterTitle; ?>
 	</div>
 </div>
