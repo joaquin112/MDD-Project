@@ -119,9 +119,21 @@ class Getcontent extends CI_Model {
     	
     	if ($user > 0) {
 	    	
-	    	$title = "User Profile";
+	    	if ($this->tank_auth->get_user_id() == $user) {
+		    	
+		    	//User is profile owner.
+		    	
+		    	$title = "Your User Profile";
+		    	
+		    	$content = "Update your profile";
+		    	
+	    	} else {
 	    	
-	    	$content = "This is a user profile";
+		    	$title = "User Profile";
+		    	
+		    	$content = "This is a user profile";
+	    	
+	    	}
 	    	
     	} else {
     	
