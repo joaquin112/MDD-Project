@@ -19,7 +19,7 @@ class Allusers extends CI_Model {
 		
 			{
 			    
-			    $content .= "<p><a href = 'users/" . $row->id . "'>" . $row->username . "</h2>";
+			    $content .= "<p><a href = '" . $this->config->item("base_url") . "users/" . $row->id . "'>" . $row->username . "</h2>";
 			    
 			    
 			}

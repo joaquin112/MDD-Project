@@ -28,10 +28,11 @@ class Main extends CI_Controller
         
         $this->load->library('session'); 
         $this->load->library('tank_auth');
+        $this->load->model("getcontent");
         
     }
     
-    function _remap()
+    function _remap() //remap is used so that I can have clean urls.
     {
         
     	$segment_1 = $this->uri->segment(2);
@@ -137,49 +138,49 @@ class Main extends CI_Controller
     
     public function index()
     {
-        $this->load->model("getcontent");
+        
         list($title, $content) = $this->getcontent->getHomepageContent();
         $this->loadView($title, $content, true);
     }
     
     public function top()
     {
-        $this->load->model("getcontent");
+       
         list($title, $content) = $this->getcontent->getTopContent();
         $this->loadView($title, $content, true);
     }
     
     public function thankyou()
     {
-    	$this->load->model("getcontent");
+    	
         list($title, $content) = $this->getcontent->getThankyouContent();
         $this->loadView($title, $content);
     }
     
     public function users()
     {
-        $this->load->model("getcontent");
+        
         list($title, $content) = $this->getcontent->getUsers();
         $this->loadView($title, $content);
     }
     
     public function login($error = "")
     {
-	    $this->load->model("getcontent");
+	    
         list($title, $content) = $this->getcontent->login($error);
         $this->loadView($title, $content);
     }
     
     public function signup($error = "")
     {
-	    $this->load->model("getcontent");
+	    
         list($title, $content) = $this->getcontent->signup($error);
         $this->loadView($title, $content);
     }
     
     public function listingPage()
     {
-	    $this->load->model("getcontent");
+	    
         list($title, $content) = $this->getcontent->listingPage();
         $this->loadView($title, $content);
     }
@@ -193,14 +194,14 @@ class Main extends CI_Controller
     
     public function submit()
     {
-	    $this->load->model("getcontent");
+	   
         list($title, $content) = $this->getcontent->submit();
         $this->loadView($title, $content);
     }
     
     public function detailPage()
     {
-	    $this->load->model("getcontent");
+	    
         list($title, $content) = $this->getcontent->detailPage();
         $this->loadView($title, $content);
     }
