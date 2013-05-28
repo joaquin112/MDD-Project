@@ -68,6 +68,9 @@ class Main extends CI_Controller
             case 'ajax':
             	$this->ajax();
             	break;
+            case 'contact':
+            	$this->contact();
+            	break;
                 
          }
         
@@ -158,6 +161,13 @@ class Main extends CI_Controller
     {
 	    $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->listingPage();
+        $this->loadView($title, $content);
+    }
+    
+    public function contact()
+    {
+	    $this->load->model("getcontent");
+        list($title, $content) = $this->getcontent->contact();
         $this->loadView($title, $content);
     }
     

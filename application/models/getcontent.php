@@ -51,7 +51,15 @@ class Getcontent extends CI_Model {
         
         return array($title, $content);
     }
-
+    
+    function contact()
+    {
+        $content = $this->load->view('pages/contact', '', TRUE);
+        $title = "Contact Us";
+        
+        return array($title, $content);
+    }
+    
 	function getUsers()
     {
     	

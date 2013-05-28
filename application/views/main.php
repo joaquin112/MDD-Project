@@ -54,7 +54,7 @@
 		<?php if (!$isHomepage) { ?>
 		
 		<div class="twelve columns">
-			<p><?php echo $content; ?></p>
+			<?php echo $content; ?>
 		</div>
 
 
