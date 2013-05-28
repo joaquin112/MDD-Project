@@ -81,12 +81,22 @@ class Getcontent extends CI_Model {
 	    
     }
     
-	function getUsers()
+	function getUsers($user)
     {
     	
-    	$this->load->model("pages/allusers");
-    	$content = $this->allusers->getContent();
-        $title = "View all users";
+    	if ($user > 0) {
+	    	
+	    	$title = "User Profile";
+	    	
+	    	$content = "This is a user profile";
+	    	
+    	} else {
+    	
+	    	$this->load->model("pages/allusers");
+	    	$content = $this->allusers->getContent();
+	        $title = "View all users";
+        
+        }
         
         return array($title, $content);
     }

@@ -159,8 +159,19 @@ class Main extends CI_Controller
     
     public function users()
     {
+        $user = $this->uri->segment(3);
         
-        list($title, $content) = $this->getcontent->getUsers();
+        if ($user != "") {
+        
+	        if (!is_numeric($user)) {
+	        
+	        	show_error("Wrong user id");
+	        	
+	        } 
+        
+        }
+        
+        list($title, $content) = $this->getcontent->getUsers($user);
         $this->loadView($title, $content);
     }
     
