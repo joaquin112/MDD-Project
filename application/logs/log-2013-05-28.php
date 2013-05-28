@@ -180,3 +180,6 @@ ERROR - 2013-05-28 03:41:59 --> Severity: Warning  --> include(ajax/ajax.php): f
 ERROR - 2013-05-28 03:41:59 --> Severity: Warning  --> include(): Failed opening 'ajax/ajax.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php') /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 127
 ERROR - 2013-05-28 03:42:29 --> Severity: Notice  --> Trying to get property of non-object /Applications/MAMP/htdocs/MDD Project/application/controllers/ajax/addstarrating.php 35
 ERROR - 2013-05-28 03:42:29 --> Severity: Notice  --> Trying to get property of non-object /Applications/MAMP/htdocs/MDD Project/application/controllers/ajax/addstarrating.php 36
+ERROR - 2013-05-28 22:49:27 --> Severity: Warning  --> include(forms/contact.php): failed to open stream: No such file or directory /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 104
+ERROR - 2013-05-28 22:49:27 --> Severity: Warning  --> include(): Failed opening 'forms/contact.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php5.4.4/lib/php') /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 104
+ERROR - 2013-05-28 22:54:48 --> Severity: Notice  --> Undefined property: Main::$getcontent /Applications/MAMP/htdocs/MDD Project/application/controllers/main.php 154

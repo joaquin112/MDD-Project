@@ -50,6 +50,9 @@ class Main extends CI_Controller
             case 'signup':
                 $this->signup();
                 break;
+            case 'thankyou':
+                $this->thankyou();
+                break;
             case 'users':
                 $this->users();
                 break;
@@ -144,6 +147,13 @@ class Main extends CI_Controller
         $this->load->model("getcontent");
         list($title, $content) = $this->getcontent->getTopContent();
         $this->loadView($title, $content, true);
+    }
+    
+    public function thankyou()
+    {
+    	$this->load->model("getcontent");
+        list($title, $content) = $this->getcontent->getThankyouContent();
+        $this->loadView($title, $content);
     }
     
     public function users()

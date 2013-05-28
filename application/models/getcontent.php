@@ -70,6 +70,17 @@ class Getcontent extends CI_Model {
         return array($title, $content);
     }
     
+    function getThankyouContent()
+    {
+	    
+	    $content = "Thank you for contacting us.";
+	    
+	    $title = "Thank you";
+	    
+	    return array($title, $content); 
+	    
+    }
+    
 	function getUsers()
     {
     	

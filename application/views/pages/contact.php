@@ -1,5 +1,5 @@
-<form id="form27" name="form27" class="wufoo  page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-action="">
+<form id="form27" name="form27" class="wufoo  page" autocomplete="off" enctype="multipart/form-data" method="post"
+action="forms/contact">
 
 <ul>
 
@@ -10,14 +10,7 @@ Message
 </label>
 
 <div>
-<textarea id="Field1" 
-name="Field1" 
-class="field textarea medium" 
-spellcheck="true" 
-rows="10" cols="50" 
-tabindex="1" 
-onkeyup=""
-required  ></textarea>
+<textarea id="Field1" name="message" class="message" spellcheck="true" rows="10" cols="50" tabindex="1" onkeyup=""required  ></textarea>
 
 </div>
 
@@ -27,7 +20,7 @@ required  ></textarea>
 Email Address
 </label>
 <div>
-<input id="Field2" name="Field2" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="2" /> 
+<input id="Field2" name="email" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="2" /> 
 </div>
 <p class="instruct" id="instruct2"><small>We won't share this with strangers.</small></p>
 </li> <li class="buttons ">
