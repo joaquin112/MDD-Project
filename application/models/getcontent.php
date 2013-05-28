@@ -25,10 +25,12 @@ class Getcontent extends CI_Model {
 	    		$userId = $array['userid'];
 	    		$author = $array['username'];
 	    		$thoughtId = $array['thoughtid'];
+	    		$rating = $array['rating'];
+	    		$votes = $array['votes'];
 	    		
 	    		 $afterTitle = $this->load->view("extra/share", array("thoughtid" => $thoughtId), TRUE);
 	    		
-				$content .= $this->load->view("incontenttwo", array("title" => $title, "content" => $tContent, "afterTitle" => $afterTitle, "author" => $author, "userId" => $userId), TRUE);
+				$content .= $this->load->view("incontenttwo", array("title" => $title, "content" => $tContent, "afterTitle" => $afterTitle, "author" => $author, "userId" => $userId, "rating" => $rating, "votes" => $votes), TRUE);
 	    	
 
 	    	

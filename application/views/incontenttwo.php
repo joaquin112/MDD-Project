@@ -6,6 +6,10 @@
 	
 	<div class="seven columns">	
 		<h2><?php echo $title; ?></h2>
-		<?php echo "<a href = 'users/$userId'>By $author</a>"; echo $afterTitle; ?>
+		<?php echo "<a href = 'users/$userId'>By $author</a>"; ?>
+		
+		<?php if ($rating > 0) { ?><div class = 'rating'><?php echo $rating; ?> / 5</div> <? } ?>
+		
+		<?php echo $afterTitle; ?>
 	</div>
 </div>
