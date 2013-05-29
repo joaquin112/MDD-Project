@@ -134,6 +134,16 @@ class Getcontent extends CI_Model {
 		    	
 		    	$content = $row->about;
 		    	
+		    	if ($content == '') {
+			    	
+			    	$content = "You haven't written anything in your profile. Replace this text to get started.";
+			    	
+		    	}
+		    	
+		    	$data = array("content" => $content);
+		    	
+		    	$content = $this->load->view("forms/editprofile", $data, TRUE);
+		    	
 	    	} else {
 	    	
 		    	$title = "User Profile";
