@@ -119,20 +119,26 @@ class Getcontent extends CI_Model {
     	
     	if ($user > 0) {
 	    	
+	    	$title = "Your User Profile";
+		    	
+	    	$this->db->select('user_profiles.about as about')->from("users")->join("user_profiles", "users.id = user_profiles.user_id")->where("users.id", $user);
+	    	
+	    	$query = $this->db->get();
+	    	
+	    	$row = $query->row();
+	    	
+	    	
 	    	if ($this->tank_auth->get_user_id() == $user) {
 		    	
 		    	//User is profile owner.
 		    	
-		    	$title = "Your User Profile";
-		    	
-		    	$content = "Update your profile";
+		    	$content = $row->about;
 		    	
 	    	} else {
 	    	
 		    	$title = "User Profile";
 		    	
-		    	$content = "This is a user profile";
-	    	
+		    	$content = $row->about;	    	
 	    	}
 	    	
     	} else {
