@@ -134,6 +134,12 @@ class Main extends CI_Controller
 		   
 		   $submit->main();
 	   
+	   } else if ($scriptUrl == "updateprofile") {
+	   
+		   $update = new Updateprofile();
+		   
+		   $update->main();
+	   
 	   } 
 	    
     }
