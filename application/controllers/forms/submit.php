@@ -13,6 +13,7 @@ class Submit extends Main {
 	
 		$title = $this->input->post('title');
 		$imageurl = $this->input->post('imageurl');
+		$meta_tags = $this->input->post('meta_tags');
 		
 		$this->form_validation->set_rules('title', 'Title', 'required');
 		$this->form_validation->set_rules('imageurl', 'Image URL', 'required|is_unique[thoughts.imagepath]');
@@ -39,6 +40,7 @@ class Submit extends Main {
 			$data['date'] = time(); //UNIX timestamp
 			$data['numcomments'] = 0;
 			$data['category'] = "undefined";
+			$data['meta_tags'] = $meta_tags;
 
 			if ($this->db->insert("thoughts", $data)) {
 				
