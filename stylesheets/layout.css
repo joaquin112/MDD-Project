@@ -19,6 +19,13 @@
 
 body {
     margin: 0px;
+    
+}
+
+.container {
+	
+	padding:25px;
+	
 }
 
 #nav {
@@ -49,20 +56,19 @@ body {
 
 h1.remove-bottom {
 	
-	display:inline;
+	padding-bottom:10px;
 	
 }
 
 ul#navigation {
 	
 	display:inline;
-	margin-left:100px;
 	
 }
 
 
 ul#navigation li{
-	
+
 	display:inline;
 	margin-left:10px;
 
