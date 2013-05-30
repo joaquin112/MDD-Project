@@ -14,3 +14,16 @@ Important files:
 [Views folder](https://github.com/joaquin112/MDD-Project/tree/master/application/views)
 
 [Forms folder](https://github.com/joaquin112/MDD-Project/tree/master/application/controllers/forms)
+
+
+To install the application on your local MAMP:
+
+Download all the files.
+
+Upload to your htdocs folder.
+
+Use the file located in the assets (the latest MySQL dump)
+
+Then just access http://localhost:8888/ 
+
+And you will be able to use the website as I intended.
